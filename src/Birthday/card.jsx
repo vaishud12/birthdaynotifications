@@ -4,27 +4,30 @@ import './Card.css'
 
 
 const Card = () => {
-    const[data,setData]=useState(Data)  
+    const[data,setData]=useState(Data)
+    const handleClick = () => {
+      setData([]);
+    };
+
+
     
   return (
-    <div className="App">
-       <section>
-          <main>
-            <p>Today Birthday {data.length} </p>
-              {data.map((x)=>{
-                return(
-                    <div className='Cards' key={x.image}>
-                      <img src={x.image} alt='' height={'60px'} width={'60px'}></img>
-                      <ruby><p>{x.age}</p><rt>{x.name}</rt></ruby>
-                    </div>
-
-                )
-              })}
-              <button onClick={()=>setData([])}>Clear</button>
-          </main>
-       </section>
-        
-    
+    <div className="Profile">
+      <section className="Card">
+        <h3 className="black">Today Birthday {data.length} 😀</h3>
+        {data.map((e, i) => {
+          return (
+            <div className="cont" key={i}>
+              <img src={e.image}></img>
+              <div className="sub-cont">
+                <label>{e.name}</label>
+                <p>{e.age}</p>
+              </div>
+            </div>
+          );
+        })}
+        <button onClick={handleClick}>Clear</button>
+      </section>
     </div>
     
     

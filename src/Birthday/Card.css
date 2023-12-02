@@ -1,47 +1,52 @@
-
-body{
-    background-color: black;
-    color:white;
+.Profile{
+    width: 100%;
+    height: 100vh;
+    background-color: palevioletred;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-
-}
-
-
-main{
-    background-color: blueviolet;
-    height:600px;
-    width:300px;
-    border-radius: 10px;
-    border: 1px solid white;
-    flex-direction: column;
-
-
-}
-.cards{
-    align-items: center;
     text-align: center;
-    padding:10px;
-    margin:10px;
-    
-    align-items: center;
-   
-    column-gap: 0.75rem;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-rt{
-    font-size: 18px;
-}
-ruby{
-   font-size: 16px;
-   text-align: center;
-}
-img{
-    object-fit: cover;
-    border-radius: 50px;;
-}
+  }
+  
+  .Profile .cont{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 80%;
+   margin: 20px auto;
+  }
+  
+  .cont img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .cont p{
+    color: gray;
+    margin-top: 0px;
+    font-size: 12px;
+  }
+  
+  .cont .sub-cont{
+    width: 120px; 
+  }
+  
+  .Card{
+    width: 300px;
+    height: auto;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+  }
+  .Profile button{
+    width: 150px;
+    height: 50px ;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    border: none;
+    margin: 12px 0;
+    font-size: 15px;
+    cursor: pointer;
+  }
