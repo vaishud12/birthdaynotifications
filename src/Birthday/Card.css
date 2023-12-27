@@ -18,22 +18,26 @@
   }
   
   .cont img{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
   }
   .cont p{
     color: gray;
     margin-top: 0px;
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .sub-cont label{
+    font-weight: 700;
+    font-size: 18px;
   }
   
   .cont .sub-cont{
-    width: 120px; 
+    width: 150px; 
   }
   
   .Card{
-    width: 300px;
+    width: 350px;
     height: auto;
     background: whitesmoke;
     border-radius: 20px;
